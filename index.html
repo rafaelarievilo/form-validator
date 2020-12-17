@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="screen">
+        <div class="leftside">
+            <img src="img/barnimages.com-2.jpg" alt="imagem">
+        </div>
+        <div class="rightside">
+            <h1>Crie uma conta</h1>
+
+            <form action="cadastro.php" method="post" class="b7validator">
+                <label for="">
+                    Seu nome:
+                    <input type="text" name="name" id="name" data-rules="required|min=2">
+                </label>
+                <label for="">
+                    Seu e-mail:
+                    <input type="text" name="e-mail" id="e-mail" data-rules="required|email">
+                </label>
+                <label for="">
+                    Sua senha:
+                    <input type="password" name="senha" id="senha" data-rules="required|min=8">
+                </label>
+                <label for="">
+                    <input type="submit" value="Cadastrar">
+                </label>
+            </form>
+            <div>Já tem uma conta? <a href="">Faça seu Login.</a></div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
